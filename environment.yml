@@ -1,0 +1,12 @@
+name: hwsi_env
+channels:
+  - gimli
+  - conda-forge
+dependencies:
+  - python=3.9
+  - suitesparse=5.10.1      
+  - pygimli
+  - numpy>=1.23
+  - scipy>=1.9
+  - matplotlib>=3.6
+  - jupyter
