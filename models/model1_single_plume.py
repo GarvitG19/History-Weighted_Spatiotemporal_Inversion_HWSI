@@ -243,8 +243,8 @@ baseline = np.nanmean(errors["Independent"]["nrmse"])
 print(f"\n{'Method':<20} {'Mean nRMSE':>11} {'Std':>7} {'vs Indep':>10}")
 print("-" * 52)
 for mn in results_dict:
-    avg = np.nanmean(errors[mn]["nrmse"])
-    std = np.nanstd(errors[mn]["nrmse"])
+    avg = np.nanmean(errors[mn]["nrmse"][1:])
+    std = np.nanstd(errors[mn]["nrmse"][1:])
     print(f"{mn:<20} {avg:>10.2f}% {std:>6.2f}%  {baseline - avg:>+8.2f} pp")
 
 print(f"\n{'Time':<8}", end="")

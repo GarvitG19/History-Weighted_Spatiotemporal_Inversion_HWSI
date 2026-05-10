@@ -36,7 +36,6 @@ Rücker, C., Günther, T., Wagner, F.M., 2017. pyGIMLi: An open-source library
 import numpy as np
 from scipy.interpolate import griddata
 from scipy.sparse import csr_matrix
-
 import pygimli.meshtools as mt
 from pygimli.physics import ert
 
